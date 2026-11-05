@@ -51,7 +51,7 @@ Ubuntu	主要为 GPL 及各类自由软件许可证	本地运行环境基础 roo
 Node.js	MIT	本地 JavaScript 运行时
 PRoot	GPL-2.0	用户空间 chroot/容器运行时
 DeepSeek Harness	MIT	交互框架与工具链
-关于 PRoot（GPL-2.0）：本应用使用 Termux 构建的 PRoot 二进制文件，并调整了动态库依赖名称以适配 Android 打包。应用随附 GPL-2.0 许可证副本。如您需要源代码，可通过许可证文件载明的上游仓库地址自行获取。Ubuntu rootfs 中可能包含其他 GPL、LGPL、BSD、Apache 等许可证的软件包，其许可证信息保存在相应包管理数据中。上述开源组件的作者与版权持有人不对本应用作出任何形式的保证，亦不对因使用上述组件产生的损害承担责任，具体以各组件许可证原文为准。
+关于 PRoot（GPL-2.0）：本应用使用 Termux 构建的 PRoot 二进制文件，并调整了动态库依赖名称以适配 Android 打包。应用随附 GPL-2.0 许可证副本。PRoot、依赖库及 Ubuntu 内置组件的对应第三方源码材料与构建说明，随同版本 GitHub Release 提供，详见 [第三方源码材料与构建来源](SOURCE_INFO.md)。Ubuntu rootfs 中可能包含其他 GPL、LGPL、BSD、Apache 等许可证的软件包，其许可证信息保存在相应包管理数据中。上述开源组件的作者与版权持有人不对本应用作出任何形式的保证，亦不对因使用上述组件产生的损害承担责任，具体以各组件许可证原文为准。
 
 六、金融支付、敏感文件及高风险操作
 
