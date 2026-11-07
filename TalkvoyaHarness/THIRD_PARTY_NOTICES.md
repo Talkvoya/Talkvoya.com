@@ -1,3 +1,5 @@
+[English](THIRD_PARTY_NOTICES.en.md) · **简体中文**
+
 # 第三方组件与许可证声明
 
 Talkvoya Harness 的 APK 与运行时中包含以下第三方软件。分发本 APK 时请一并保留本文件。

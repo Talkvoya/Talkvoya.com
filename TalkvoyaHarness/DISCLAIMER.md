@@ -1,3 +1,5 @@
+[English](DISCLAIMER.en.md) · **简体中文**
+
 免责声明与使用告知
 
 应用名称： Talkvoya Harness

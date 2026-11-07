@@ -16,7 +16,7 @@
 
 Each release page lists the version, installation files, and SHA-256 checksums. Compare the checksum of the APK you downloaded with the published value before installing it.
 
-[All releases](https://github.com/Talkvoya/Talkvoya.com/releases) · [Harness use notice in Simplified Chinese](TalkvoyaHarness/DISCLAIMER.md) · [Third-party notices in Simplified Chinese](TalkvoyaHarness/THIRD_PARTY_NOTICES.md)
+[All releases](https://github.com/Talkvoya/Talkvoya.com/releases) · [English release notes](TalkvoyaHarness/RELEASE_NOTES.en.md) · [Harness disclaimer and use notice](TalkvoyaHarness/DISCLAIMER.en.md) · [Third-party licenses](TalkvoyaHarness/THIRD_PARTY_NOTICES.en.md)
 
 ## Official channels
 

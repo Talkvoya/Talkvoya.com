@@ -1,3 +1,5 @@
+[English](SOURCE_INFO.en.md) · **简体中文**
+
 # 第三方源码材料与构建来源
 
 对应版本：Talkvoya Harness 1.5.2（9），Android ARM64。

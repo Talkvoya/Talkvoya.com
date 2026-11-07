@@ -32,15 +32,15 @@ Android 8.0 or later · ARM64 (arm64-v8a) · About 1.4 GB free for runtime setup
 
 Talkvoya develops Harness independently of DeepSeek. The runtime operates on your device. Your chosen model provider processes model requests online and applies its own billing. API keys are stored on your device. With full permissions enabled, authorized tools can run automatically, so choose permissions appropriate to the task.
 
-[Disclaimer and use notice in Simplified Chinese](DISCLAIMER.md) · [Third-party licenses in Simplified Chinese](THIRD_PARTY_NOTICES.md)
+[Disclaimer and use notice](DISCLAIMER.en.md) · [Third-party licenses](THIRD_PARTY_NOTICES.en.md)
 
-Releases include a signed APK and a SHA-256 checksum. Third-party components retain their original licenses. The 1.5.3 APK uses the same bundled runtime as 1.5.2. Its corresponding third-party source and build records remain available with that release. [Source materials and build records](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2) · [Source details in Simplified Chinese](SOURCE_INFO.md)
+Releases include a signed APK and a SHA-256 checksum. Third-party components retain their original licenses. The 1.5.3 APK uses the same bundled runtime as 1.5.2. Its corresponding third-party source and build records remain available with that release. [Source materials and build records](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2) · [Source details and build provenance](SOURCE_INFO.en.md)
 
 ## What's new in 1.5.3
 
 - The new chat screen keeps the greeting and message field, with a cleaner layout.
 - About uses the Talkvoya brand name. Its GitHub link opens the Talkvoya product hub.
-- [Release notes and downloads](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.3)
+- [English release notes](RELEASE_NOTES.en.md#version-153) · [All version 1.5.3 downloads](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.3)
 
 ## Official channels
 
