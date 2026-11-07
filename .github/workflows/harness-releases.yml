@@ -1,9 +1,8 @@
 name: Keep only the latest Harness APK public
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: [.github/workflows/harness-releases.yml]
+  release:
+    types: [published]
 
 permissions:
   contents: write
@@ -50,6 +49,12 @@ jobs:
 
           latest = api("/releases/latest")
           tag = latest["tag_name"]
+          if os.environ["GITHUB_EVENT_NAME"] == "release":
+              with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as event_file:
+                  event_release = json.load(event_file)["release"]
+              if event_release["id"] != latest["id"]:
+                  print("The published release is not the repository's latest stable release.")
+                  raise SystemExit(0)
           if latest["draft"] or latest["prerelease"] or not re.fullmatch(r"v\d+\.\d+\.\d+", tag):
               raise SystemExit("Expected a stable, published Harness release.")
           apk_name = f"talkvoya-harness-{tag[1:]}-arm64.apk"

@@ -4,7 +4,7 @@
 
 **官方产品与发布中心**
 
-[English](README.md) · [Talkvoya.com](https://talkvoya.com/)
+[English](README.md) · [官网发布中心](https://talkvoya.com/release-center/zh-cn/) · [Talkvoya.com](https://talkvoya.com/)
 
 ## 产品
 

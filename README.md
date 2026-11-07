@@ -4,7 +4,7 @@
 
 **Official product and release hub**
 
-[简体中文](README.zh-CN.md) · [Talkvoya.com](https://talkvoya.com/)
+[简体中文](README.zh-CN.md) · [Official release center](https://talkvoya.com/release-center/) · [Talkvoya.com](https://talkvoya.com/)
 
 ## Products
 
