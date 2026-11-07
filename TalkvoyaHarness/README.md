@@ -10,11 +10,11 @@ Run the DeepSeek Harness runtime on your phone and connect to the model provider
 
 Android 8.0 or later · ARM64 (arm64-v8a) · About 1.4 GB free for runtime setup
 
-[Talkvoya product hub](../README.md) · [Setup guide](#get-started) · [Official channels](#official-channels) · [Simplified Chinese](README.zh-CN.md)
+[Talkvoya product hub](https://github.com/Talkvoya/Talkvoya.com) · [Setup guide](#get-started) · [Official channels](#official-channels) · [Simplified Chinese](README.zh-CN.md)
 
 ## What you can do
 
-| | |
+| Task | What Harness can do |
 | --- | --- |
 | **Work with documents** | Summarize material, draft a document, or organize information into a table. |
 | **Choose your model** | Connect a supported provider such as DeepSeek, OpenAI, or Anthropic. Switch models and adjust reasoning depth where supported. |

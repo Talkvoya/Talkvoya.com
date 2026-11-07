@@ -10,7 +10,7 @@
 
 | Product | Platform | What it does | Get started |
 | --- | --- | --- | --- |
-| **Talkvoya Harness** | Android · ARM64 | A mobile AI workspace for conversation, document tasks, and optional phone control. | [Product and setup guide](TalkvoyaHarness/) · [Latest release](https://github.com/Talkvoya/Talkvoya.com/releases/latest) |
+| **Talkvoya Harness** | Android · ARM64 | A mobile AI workspace for conversation, document tasks, and optional phone control. | [Product and setup guide](https://github.com/Talkvoya/Talkvoya.com/tree/main/TalkvoyaHarness) · [Latest release](https://github.com/Talkvoya/Talkvoya.com/releases/latest) |
 
 ## Download with confidence
 
