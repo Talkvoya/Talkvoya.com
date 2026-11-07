@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Third-party licenses · Talkvoya">
+<meta name="theme-color" content="#f6f8ff">
+<title>Third-party licenses | Talkvoya</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/talkvoya-logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="zh-CN" href="../zh-cn/licenses/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="bar"><a class="brand" href="../"><img src="../assets/talkvoya-logo.svg" alt="Talkvoya" width="116" height="34"></a><nav aria-label="Main navigation"><a href="../harness/">Product</a><a href="../download/">Download</a><a href="../guide/">Guide</a><a href="../trust/">Trust</a><a href="../support/">Support</a><a class="language" href="../zh-cn/licenses/" lang="zh-CN">简体中文</a></nav></div></header>
+<main id="main"><section class="hero"><p class="eyebrow">Talkvoya · Official release hub</p><h1>Third-party licenses</h1></section>
+<article class="content"><p><strong>English</strong> · <a href="../zh-cn/licenses/">Simplified Chinese</a></p>
+<p>The Talkvoya Harness APK and runtime include the third-party software listed below. Keep this notice with any distribution of the APK.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Version</th>
+<th>License</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu Base</td>
+<td>24.04.5</td>
+<td>Ubuntu licenses, including GPL and LGPL components</td>
+<td><a href="https://cdimage.ubuntu.com/ubuntu-base/">Ubuntu Base</a></td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>22.23.2 (LTS)</td>
+<td>MIT</td>
+<td><a href="https://nodejs.org/">Node.js</a></td>
+</tr>
+<tr>
+<td>PRoot</td>
+<td>5.1.107.102</td>
+<td>GPL-2.0</td>
+<td><a href="https://github.com/termux/proot">Termux build</a></td>
+</tr>
+<tr>
+<td>libtalloc</td>
+<td>2.5.0</td>
+<td>LGPL-3.0-or-later</td>
+<td><a href="https://talloc.samba.org/">talloc</a></td>
+</tr>
+<tr>
+<td>libandroid-shmem</td>
+<td>0.7</td>
+<td>BSD-3-Clause</td>
+<td><a href="https://github.com/termux/libandroid-shmem">libandroid-shmem</a></td>
+</tr>
+<tr>
+<td>LibreOffice WASM (@deepseek-ai/libreoffice-kit-wasm)</td>
+<td>0.1.5</td>
+<td>MPL-2.0 and bundled component licenses</td>
+<td><a href="https://github.com/deepseek-ai/dsh-libreoffice-kit">LibreOffice Kit</a></td>
+</tr>
+<tr>
+<td>DeepSeek Harness (@deepseek-ai/dsh and dependencies)</td>
+<td>0.2.1-rc.4</td>
+<td>MIT, with separate licenses for dependencies</td>
+<td><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness</a> and npm</td>
+</tr>
+<tr>
+<td>Apache Commons Compress</td>
+<td>1.27.1</td>
+<td>Apache-2.0</td>
+<td><a href="https://commons.apache.org/proper/commons-compress/">Commons Compress</a></td>
+</tr>
+<tr>
+<td>XZ for Java</td>
+<td>1.10</td>
+<td>Public domain</td>
+<td><a href="https://tukaani.org/xz/java.html">XZ for Java</a></td>
+</tr>
+<tr>
+<td>Kotlin, kotlinx.coroutines, and kotlinx.serialization</td>
+<td>—</td>
+<td>Apache-2.0</td>
+<td><a href="https://kotlinlang.org/">Kotlin</a></td>
+</tr>
+<tr>
+<td>Jetpack Compose and AndroidX</td>
+<td>—</td>
+<td>Apache-2.0</td>
+<td><a href="https://developer.android.com/jetpack">Android Jetpack</a></td>
+</tr>
+</tbody>
+</table>
+<h2>GPL component notice for PRoot</h2>
+<p>PRoot is distributed under GPL-2.0. The APK bundles the official Termux binary. Packaging uses <code>patchelf</code> to change <code>DT_NEEDED</code> from <code>libtalloc.so.2</code> to <code>libtalloc.so</code> and set RPATH to <code>$ORIGIN</code> for use in Android's <code>nativeLibraryDir</code>.</p>
+<p>The corresponding source for PRoot, libtalloc, libandroid-shmem, and the bundled Ubuntu packages is available alongside the original runtime release, together with the Termux build framework and provenance records. Source files retain their licenses and copyright notices. <a href="../sources/">Exact versions, downloads, and checksums</a>.</p>
+<h2>Trademarks</h2>
+<ul>
+<li>Talkvoya and Talkvoya Harness are the project's names and marks.</li>
+<li>DeepSeek, DeepSeek Harness, and related marks belong to their respective owners. Talkvoya Harness is an independent third-party client.</li>
+</ul>
+</article></main>
+<footer><div><span>© Talkvoya</span><a href="https://talkvoya.com/">Talkvoya.com</a><a href="https://github.com/Talkvoya/Talkvoya.com">GitHub</a><a href="../trust/">Privacy and licenses</a><a href="../support/">Contact</a></div></footer>
+</body></html>

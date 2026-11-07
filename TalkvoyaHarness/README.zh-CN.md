@@ -1,48 +1,26 @@
-![Talkvoya](../.github/assets/talkvoya-logo.svg)
-
-[English](README.md) · **简体中文** · [品牌首页](../README.zh-CN.md)
+[![Talkvoya](../.github/assets/talkvoya-logo.svg)](../README.zh-CN.md)
 
 # Talkvoya Harness
 
-**从一句话开始，把 AI 对话、文件处理和手机操作放在同一个 Android 工作界面。**
+**在 Android 上对话、处理文档，并按需开启手机操控。**
 
-在手机上运行 DeepSeek Harness 环境，选择自己的模型供应商。让 AI 帮你梳理资料、起草文档，或在你授权后操作手机。任务运行时，可以从进度悬浮窗查看状态、追加指令或停止任务。
+应用永久免费使用，支持 Android ARM64。请使用自己的模型 API 密钥，模型服务商可能按用量收费。
 
-**[查看最新版本](https://github.com/Talkvoya/Talkvoya.com/releases/latest)** · **[下载 1.5.7 ARM64 APK](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk)** · [校验文件与更新记录](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.7)
+[**下载 Android APK**](DOWNLOAD.md) · [安装与帮助](HELP.md) · [English](README.md)
 
-Android 8.0 或更新版本 · ARM64（arm64-v8a） · 安装运行环境请预留约 1.4 GB
+## 手机里的 AI 工作空间
 
-## 用在你的日常工作里
+- **对话和处理文档。** 起草内容、归纳资料，或把笔记整理成表格。
+- **自己选择模型。** 使用自备的 API 密钥连接支持的 DeepSeek、OpenAI 或 Anthropic 服务，并在模型支持时调整思考深度。
+- **跟进任务进度。** 查看工具活动，按需使用悬浮窗跟进、补充指令或停止任务。
+- **按需开启手机操控。** 在设备上管理无障碍权限和敏感应用名单。
 
-| 场景 | 可以怎么做 |
-| --- | --- |
-| **整理资料** | 让 AI 归纳文件内容、起草文档或把信息整理成表格。 |
-| **使用自己选的模型** | 配置 DeepSeek、OpenAI 或 Claude 等支持的供应商，按需要切换模型和思考深度。 |
-| **跟进执行过程** | 查看工具调用和实时进度，在任务中途补充要求，或随时停止。 |
-| **在手机上完成任务** | 按需开启无障碍操控，自行设置敏感应用名单。 |
+## 应用界面
+
+<img src="../docs/assets/harness-light.webp" width="215" alt="Talkvoya Harness 浅色新对话，Android 模拟器截图"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness 深色新对话，Android 模拟器截图">
+
+截图为简体中文界面，可在设置中切换为英文。
 
 ## 开始使用
 
-1. 从版本页下载 ARM64 APK。需要核对文件时，使用随附的 SHA-256 校验值。Windows 可运行 `Get-FileHash -Algorithm SHA256 <APK 文件>`。
-2. 在 Android 上打开 APK，按系统提示允许当前安装来源。首次打开时阅读使用告知并安装本地运行环境。
-3. 进入设置，添加你自己的模型 API 密钥，选择模型后开始对话。手机操控可按需启用。
-4. 已安装 1.5.5 的用户可使用同一签名的 1.5.7 覆盖升级。卸载会清除本地对话、设置、密钥和运行环境，重要内容请先备份。
-
-## 数据与权限
-
-Talkvoya Harness 由 Talkvoya 独立开发，与 DeepSeek 官方无关联。运行环境在手机上，模型请求由你选择的供应商在线处理和计费。API 密钥保存在设备上。开启完全权限时，已启用的工具可自动执行，请根据任务范围配置权限。[免责声明与使用告知](DISCLAIMER.md)
-
-发布页提供签名安装包和 SHA-256 校验文件。第三方组件保留各自许可证，自有应用源码保留在私有环境。运行环境的第三方源码与构建记录随 1.5.2 发布，本版沿用同一套内置运行环境。[第三方许可](THIRD_PARTY_NOTICES.md) · [源码获取说明](SOURCE_INFO.md)
-
-## 1.5.7 更新
-
-- 新对话页的四条建议已更新文案和表情，文字居中。点按后填入输入框，可编辑后手动发送。背景从底部渐入蓝色，分别适配浅色和深色主题。
-- [查看版本说明与下载附件](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.7)
-
-## 关注与联系
-
-如果这个工具对你有帮助，欢迎在仓库点 **Star** 收藏，并关注 Talkvoya 获取产品动态。想收到版本提醒，可在仓库选择 **Watch → Releases**。[Talkvoya 产品入口](https://github.com/Talkvoya/Talkvoya.com) · [关注 GitHub 账号](https://github.com/Talkvoya)
-
-[官网](https://talkvoya.com/) · [YouTube](https://www.youtube.com/@Talkvoya) · [X](https://x.com/Talkvoya) · [Instagram](https://www.instagram.com/talkvoya) · [Facebook](https://www.facebook.com/Talkvoya) · [Threads](https://www.threads.com/@talkvoya) · [TikTok](https://www.tiktok.com/@talkvoya)
-
-应用内也可在「设置 → 关于 → 联系我们」查看 Talkvoya 联系二维码。
+[下载中心](DOWNLOAD.md) · [安装与故障排查](HELP.md) · [最新版本说明](RELEASE_NOTES.md) · [隐私、权限与许可](TRUST.md) · [联系我们](../SUPPORT.zh-CN.md)

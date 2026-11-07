@@ -1,0 +1,114 @@
+name: Keep only the latest Harness APK public
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/harness-releases.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: harness-release-assets
+
+jobs:
+  retire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Verify the stable download and retire older installers
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          import urllib.request
+
+          repository = os.environ["GITHUB_REPOSITORY"]
+          if repository != "Talkvoya/Talkvoya.com":
+              raise SystemExit("This workflow is only for the official distribution repository.")
+          api_root = "https://api.github.com/repos/" + repository
+          github = "https://github.com/" + repository
+
+          def api(path, method="GET", data=None):
+              request = urllib.request.Request(
+                  api_root + path,
+                  data=json.dumps(data).encode() if data is not None else None,
+                  method=method,
+                  headers={
+                      "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                      "Accept": "application/vnd.github+json",
+                      "X-GitHub-Api-Version": "2022-11-28",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=60) as response:
+                  return json.load(response) if response.status != 204 else None
+
+          latest = api("/releases/latest")
+          tag = latest["tag_name"]
+          if latest["draft"] or latest["prerelease"] or not re.fullmatch(r"v\d+\.\d+\.\d+", tag):
+              raise SystemExit("Expected a stable, published Harness release.")
+          apk_name = f"talkvoya-harness-{tag[1:]}-arm64.apk"
+          expected_names = {apk_name, apk_name + ".sha256"}
+          assets = {item["name"]: item for item in latest["assets"] if item["state"] == "uploaded"}
+          if not expected_names <= assets.keys():
+              raise SystemExit("The latest APK and checksum must both be present.")
+          apk = assets[apk_name]
+          checksum = assets[apk_name + ".sha256"]
+          public_download_prefix = f"{github}/releases/download/{tag}/"
+          for item in (apk, checksum):
+              if item["browser_download_url"] != public_download_prefix + item["name"]:
+                  raise SystemExit("An unexpected download URL was returned.")
+          with urllib.request.urlopen(checksum["browser_download_url"], timeout=60) as response:
+              fields = response.read(2048).decode().split()
+          if len(fields) != 2 or fields[1] != apk_name or apk.get("digest") != "sha256:" + fields[0]:
+              raise SystemExit("The APK digest and checksum file disagree.")
+          digest = hashlib.sha256()
+          length = 0
+          with urllib.request.urlopen(apk["browser_download_url"], timeout=120) as response:
+              while data := response.read(1024 * 1024):
+                  digest.update(data)
+                  length += len(data)
+          if length != apk["size"] or digest.hexdigest() != fields[0]:
+              raise SystemExit("A full anonymous download did not match the published checksum.")
+          print(f"Verified {apk_name} ({length} bytes). SHA-256 {digest.hexdigest()}", flush=True)
+
+          page = 1
+          older = []
+          version_tuple = lambda value: tuple(map(int, value[1:].split(".")))
+          while releases := api(f"/releases?per_page=100&page={page}"):
+              for release in releases:
+                  old_tag = release["tag_name"]
+                  if release["draft"] or not re.fullmatch(r"v\d+\.\d+\.\d+", old_tag) or version_tuple(old_tag) >= version_tuple(tag):
+                      continue
+                  old_name = f"talkvoya-harness-{old_tag[1:]}-arm64.apk"
+                  old_assets = [item for item in release["assets"] if item["name"] in {old_name, old_name + ".sha256"}]
+                  if old_assets and release.get("immutable"):
+                      raise SystemExit(f"{old_tag} is immutable. No older assets were changed.")
+                  if old_assets:
+                      older.append((release, old_name, old_assets))
+              page += 1
+          if api("/releases/latest")["id"] != latest["id"]:
+              raise SystemExit("The latest release changed during verification.")
+          archived = f"> Archived release notes. For the current installer, visit the [official download center]({github}/blob/main/TalkvoyaHarness/DOWNLOAD.en.md).\n> 历史发布记录。当前安装包请前往[官方下载中心]({github}/blob/main/TalkvoyaHarness/DOWNLOAD.md)。"
+          for release, old_name, old_assets in older:
+              old_tag = release["tag_name"]
+              body = release["body"] or ""
+              body = "\n".join(
+                  line for line in body.splitlines()
+                  if old_name not in line and not re.match(r"^\s*(?:\*\*)?APK SHA-256", line)
+              )
+              if not body.startswith(archived):
+                  body = archived + "\n\n" + body
+              api(f'/releases/{release["id"]}', "PATCH", {"body": body})
+              for item in old_assets:
+                  api(f'/releases/assets/{item["id"]}', "DELETE")
+                  print(f"Retired {item['name']} from {old_tag}", flush=True)
+              remaining = api(f'/releases/{release["id"]}')["assets"]
+              if any(item["name"] in {old_name, old_name + ".sha256"} for item in remaining):
+                  raise SystemExit(f"An archived APK is still attached to {old_tag}.")
+          PY

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Third-party source materials · Talkvoya">
+<meta name="theme-color" content="#f6f8ff">
+<title>Third-party source materials | Talkvoya</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/talkvoya-logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="zh-CN" href="../zh-cn/sources/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="bar"><a class="brand" href="../"><img src="../assets/talkvoya-logo.svg" alt="Talkvoya" width="116" height="34"></a><nav aria-label="Main navigation"><a href="../harness/">Product</a><a href="../download/">Download</a><a href="../guide/">Guide</a><a href="../trust/">Trust</a><a href="../support/">Support</a><a class="language" href="../zh-cn/sources/" lang="zh-CN">简体中文</a></nav></div></header>
+<main id="main"><section class="hero"><p class="eyebrow">Talkvoya · Official release hub</p><h1>Third-party source materials</h1></section>
+<article class="content"><p><strong>English</strong> · <a href="../zh-cn/sources/">Simplified Chinese</a></p>
+<p>These materials correspond to Talkvoya Harness 1.5.2 (build 9) for Android ARM64. Version 1.5.3 bundles the same runtime and native libraries.</p>
+<h2>Downloads</h2>
+<ul>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2">Original runtime release and all assets</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/talkvoya-harness-1.5.2-third-party-sources.zip">PRoot, dependency and Ubuntu sources, plus build records</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/talkvoya-harness-1.5.2-libreoffice-wasm-sources.zip">LibreOffice WASM upstream patches, build materials, and licenses</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/SHA256SUMS-1.5.2.txt">SHA-256 checksums for all release assets</a></li>
+</ul>
+<p>Install the APK to use the app. The archives are provided for license review, auditing, and building the third-party components.</p>
+<h2>PRoot and native dependencies</h2>
+<ul>
+<li>PRoot 5.1.107.102 is licensed under GPL-2.0. The corresponding source archive's SHA-256 is <code>30d12a6e2cc4147123756ff58edea262d3083bbc238c12d0ab9b39e3d1c40852</code>.</li>
+<li>The archive includes a complete snapshot of the Termux build framework at the commit that introduced this version. <a href="https://github.com/termux/termux-packages/commit/b734bc49dc0eedb2c454e1c5d3c48d35d81d4bc9">Termux build commit</a>.</li>
+<li>The libtalloc 2.5.0 library is licensed under LGPL-3.0-or-later, and other files in its source package carry their respective licenses. libandroid-shmem 0.7 is licensed under BSD-3-Clause. The archive includes the corresponding source for both.</li>
+<li>We checked the original Termux packages, loader, and dependency build records. Packaging uses <code>patchelf</code> to change <code>libtalloc.so.2</code> to <code>libtalloc.so</code> and set RPATH to <code>$ORIGIN</code>. The archive README documents the build steps and file mapping.</li>
+<li>The PRoot binary in the APK matches the retained packaging output byte for byte. The loader, libtalloc, and libandroid-shmem match the files extracted from the original Termux packages.</li>
+</ul>
+<h2>Ubuntu</h2>
+<p>The original assembly script used official Ubuntu Base 24.04.5 ARM64. The APK's <code>dpkg</code> inventory lists 91 installed binary packages corresponding to 65 source packages.</p>
+<p>The archive contains all 65 exact source package versions, with 208 source archives, patches, and <code>.dsc</code> files. Its inventory records each download URL, version, size, and SHA-256 checksum. Sources came from the official Ubuntu archive and the <code>20260909T000000Z</code> snapshot. Each file was verified against the official source indexes.</p>
+<p>To extract a Debian or Ubuntu source package, run <code>dpkg-source -x ubuntu/&lt;package&gt;/&lt;version&gt;.dsc</code>. Follow its <code>debian/control</code>, <code>debian/rules</code>, and patches to build it. The APK uses the official prebuilt components, and this verification did not reproduce their builds bit for bit.</p>
+<h2>LibreOffice WASM</h2>
+<p>The runtime bundles <code>@deepseek-ai/libreoffice-kit-wasm</code> 0.1.5 under MPL-2.0 and other bundled component licenses. The archive includes the upstream package's <code>sources/</code>, patches, build configuration, and <code>licenses/</code>, checked against its <code>prebuilds.json</code>.</p>
+<p>The upstream build identifies LibreOffice Core commit <code>bce0998afefdbc355585ca324285661a2170ba77</code> and the complete 26.8.0.3 source archive. <a href="https://github.com/LibreOffice/core/tree/bce0998afefdbc355585ca324285661a2170ba77">LibreOffice Core commit</a> · <a href="https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-26.8.0.3.tar.xz">Upstream source archive</a>.</p>
+<h2>Licenses and publication scope</h2>
+<p>Each third-party component keeps its original license. The repository's MIT license covers its release documentation. Talkvoya Harness's proprietary application source and project files, signing keys, API keys, credentials, and chat records remain outside the published assets.</p>
+<p>The SHA-256 checksum of the 1.5.2 APK is <code>975704f8604e445d49d443b9788237709cb37135715a00f81d3514dfda57a074</code>.</p>
+</article></main>
+<footer><div><span>© Talkvoya</span><a href="https://talkvoya.com/">Talkvoya.com</a><a href="https://github.com/Talkvoya/Talkvoya.com">GitHub</a><a href="../trust/">Privacy and licenses</a><a href="../support/">Contact</a></div></footer>
+</body></html>

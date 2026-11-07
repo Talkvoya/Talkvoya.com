@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第三方源码材料 · Talkvoya">
+<meta name="theme-color" content="#f6f8ff">
+<title>第三方源码材料 | Talkvoya</title>
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="icon" href="../../assets/talkvoya-logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="../../sources/">
+</head>
+<body>
+<a class="skip" href="#main">跳至内容</a>
+<header><div class="bar"><a class="brand" href="../"><img src="../../assets/talkvoya-logo.svg" alt="Talkvoya" width="116" height="34"></a><nav aria-label="主导航"><a href="../harness/">产品</a><a href="../download/">下载</a><a href="../guide/">指南</a><a href="../trust/">信任与许可</a><a href="../support/">支持</a><a class="language" href="../../sources/" lang="en">English</a></nav></div></header>
+<main id="main"><section class="hero"><p class="eyebrow">Talkvoya · 官方发布中心</p><h1>第三方源码材料</h1></section>
+<article class="content"><p><a href="../../sources/">English</a> · <strong>简体中文</strong></p>
+<p>对应版本：Talkvoya Harness 1.5.2（9），Android ARM64。</p>
+<h2>下载</h2>
+<ul>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2">APK 与全部附件</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/talkvoya-harness-1.5.2-third-party-sources.zip">PRoot、依赖库、Ubuntu 对应源码及构建记录</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/talkvoya-harness-1.5.2-libreoffice-wasm-sources.zip">LibreOffice WASM 上游补丁、构建材料与许可</a></li>
+<li><a href="https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.2/SHA256SUMS-1.5.2.txt">全部附件 SHA-256 校验值</a></li>
+</ul>
+<p>普通用户只需安装 APK。第三方源码附件供许可证查阅、审计及第三方组件构建使用，不需要在手机上解压安装。</p>
+<h2>PRoot 及原生依赖</h2>
+<ul>
+<li>PRoot 5.1.107.102，GPL-2.0；对应源码包 SHA-256 为 <code>30d12a6e2cc4147123756ff58edea262d3083bbc238c12d0ab9b39e3d1c40852</code>。</li>
+<li>Termux 构建框架固定到引入该版本的提交 <a href="https://github.com/termux/termux-packages/commit/b734bc49dc0eedb2c454e1c5d3c48d35d81d4bc9">b734bc49dc0eedb2c454e1c5d3c48d35d81d4bc9</a>，完整快照随附件提供。</li>
+<li>libtalloc 2.5.0：库代码 LGPL-3.0-or-later，源包其他文件按其各自许可；libandroid-shmem 0.7：BSD-3-Clause。两者均提供对应源码。</li>
+<li>原始 Termux 安装包、加载器及依赖库的本地构建记录已核对。打包 PRoot 时使用 <code>patchelf</code> 将 <code>libtalloc.so.2</code> 改为 <code>libtalloc.so</code>，并将 RPATH 设置为 <code>$ORIGIN</code>。附件 README 列出具体重建步骤与文件映射。</li>
+<li>APK 内的 PRoot 与保留的调整后构建产物完全一致；加载器、libtalloc 和 libandroid-shmem 与原始 Termux 解包文件完全一致。</li>
+</ul>
+<h2>Ubuntu</h2>
+<p>原始组装脚本使用官方 Ubuntu Base 24.04.5 ARM64。直接读取 APK 内的 dpkg 清单，确认 91 个已安装二进制包，对应 65 个源码包。</p>
+<p>附件提供全部 65 个精确版本，共 208 个源码归档、补丁及 <code>.dsc</code> 文件，并附下载 URL、包版本、大小及 SHA-256。来源为 Ubuntu 官方软件仓库和 <code>20260909T000000Z</code> 日期快照，每个文件均按官方源码索引校验。</p>
+<p>解压附件后，使用 <code>dpkg-source -x ubuntu/&lt;包名&gt;/&lt;版本&gt;.dsc</code> 展开 Debian/Ubuntu 源包，按其 <code>debian/control</code>、<code>debian/rules</code> 和补丁构建。本次使用官方已构建组件；没有声称完成逐位一致的源码重编译。</p>
+<h2>LibreOffice WASM</h2>
+<p>DSH 内置的 <code>@deepseek-ai/libreoffice-kit-wasm</code> 0.1.5 使用 MPL-2.0，并带有其他组件许可。附件包含该上游包提供的 <code>sources/</code>、补丁、构建配置和 <code>licenses/</code>，已对照其 <code>prebuilds.json</code> 校验。</p>
+<p>其记录的 LibreOffice Core 精确提交为 <a href="https://github.com/LibreOffice/core/tree/bce0998afefdbc355585ca324285661a2170ba77">bce0998afefdbc355585ca324285661a2170ba77</a>，上游构建指定的<a href="https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-26.8.0.3.tar.xz">完整源码归档为 26.8.0.3</a>。</p>
+<h2>许可与公开范围</h2>
+<p>这些是第三方开源组件材料，适用各自原始许可证，不统一改为 MIT。仓库 MIT 许可适用于发布文档；不改变第三方组件的许可，也不表示公开了 Talkvoya Harness 自有应用源码。</p>
+<p>发布附件不包含本项目 Kotlin/Compose 源码、项目工程、签名私钥、API 密钥、用户凭据或聊天数据。APK SHA-256：<code>975704f8604e445d49d443b9788237709cb37135715a00f81d3514dfda57a074</code>。</p>
+</article></main>
+<footer><div><span>© Talkvoya</span><a href="https://talkvoya.com/">Talkvoya.com</a><a href="https://github.com/Talkvoya/Talkvoya.com">GitHub</a><a href="../trust/">隐私与许可</a><a href="../support/">联系</a></div></footer>
+</body></html>

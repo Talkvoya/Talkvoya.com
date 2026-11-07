@@ -1,50 +1,26 @@
-![Talkvoya](../.github/assets/talkvoya-logo.svg)
+[![Talkvoya](../.github/assets/talkvoya-logo.svg)](../README.md)
 
 # Talkvoya Harness
 
-**Give your phone a task in plain English. Draft, organize, and get things done from one Android workspace.**
+**Chat, work with documents, and control your phone when you choose.**
 
-Run the DeepSeek Harness runtime on your phone and connect to the model provider you choose. Draft a document, turn notes into a table, or enable phone control when a task needs it. The progress overlay lets you follow the work, add instructions, and stop a task as it runs.
+Free to use forever for Android ARM64. Bring your own model API key. Your model provider may charge for usage.
 
-[**Download the ARM64 APK**](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk) · [**Latest release**](https://github.com/Talkvoya/Talkvoya.com/releases/latest) · [SHA-256 checksum](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk.sha256)
+[**Download Android APK**](DOWNLOAD.en.md) · [Setup and help](HELP.en.md) · [简体中文](README.zh-CN.md)
 
-Android 8.0 or later · ARM64 (arm64-v8a) · About 1.4 GB free for runtime setup
+## An AI workspace on your Android device
 
-[Talkvoya product hub](https://github.com/Talkvoya/Talkvoya.com) · [Setup guide](#get-started) · [Official channels](#official-channels) · [Simplified Chinese](README.zh-CN.md)
+- **Chat and work with documents.** Draft, summarize, or turn notes into a table.
+- **Choose your model.** Connect a supported DeepSeek, OpenAI, or Anthropic account with your own API key. Change reasoning depth where the model supports it.
+- **Follow the task.** See tool activity and use the optional overlay to follow progress, add instructions, or stop the task.
+- **Enable phone control when you need it.** Manage Accessibility permissions and your sensitive-app list on your device.
 
-## What you can do
+## A look at the app
 
-| Task | What Harness can do |
-| --- | --- |
-| **Work with documents** | Summarize material, draft a document, or organize information into a table. |
-| **Choose your model** | Connect a supported provider such as DeepSeek, OpenAI, or Anthropic. Switch models and adjust reasoning depth where supported. |
-| **Follow the work** | See tool activity and live progress, add instructions mid-task, or stop a task from the overlay. |
-| **Use phone control on your terms** | Turn on accessibility control when you need it and choose which apps to protect. |
+<img src="../docs/assets/harness-light.webp" width="215" alt="Talkvoya Harness new chat in light mode, Android emulator"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in dark mode, Android emulator">
+
+The screenshots show the app’s Simplified Chinese interface. English is also available from Settings.
 
 ## Get started
 
-1. Download the ARM64 APK and its checksum. On Windows, run `Get-FileHash -Algorithm SHA256 <APK file>` and compare the result with the published value.
-2. Open the APK on Android and follow the prompts to allow installation from that source. On first launch, review the use notice and install the bundled runtime.
-3. In Settings, add your own model API key and choose a model. Enable phone control only when you need it.
-4. If you are upgrading from 1.5.5, install 1.5.7 over the existing app. Both versions use the same signing certificate. Back up important data before uninstalling, which removes local chats, settings, keys, and the runtime.
-
-## Data, permissions, and licenses
-
-Talkvoya develops Harness independently of DeepSeek. The runtime operates on your device. Your chosen model provider processes model requests online and applies its own billing. API keys are stored on your device. With full permissions enabled, authorized tools can run automatically, so choose permissions appropriate to the task.
-
-[Disclaimer and use notice](DISCLAIMER.en.md) · [Third-party licenses](THIRD_PARTY_NOTICES.en.md)
-
-Releases include a signed APK and a SHA-256 checksum. Third-party components retain their original licenses. The 1.5.7 APK uses the same bundled runtime as 1.5.2. Its corresponding third-party source and build records remain available with that release. [Source materials and build records](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2) · [Source details and build provenance](SOURCE_INFO.en.md)
-
-## What's new in 1.5.7
-
-- New chats show four centered suggestions with emoji. Tap a suggestion to fill the message field, then edit or send it yourself. The new-chat background fades into a soft blue in light mode and a deep blue in dark mode.
-- [English release notes](RELEASE_NOTES.en.md#version-157) · [All version 1.5.7 downloads](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.7)
-
-## Official channels
-
-[Website](https://talkvoya.com/) · [YouTube](https://www.youtube.com/@Talkvoya) · [X](https://x.com/Talkvoya) · [Instagram](https://www.instagram.com/talkvoya) · [Facebook](https://www.facebook.com/Talkvoya) · [Threads](https://www.threads.com/@talkvoya) · [TikTok](https://www.tiktok.com/@talkvoya)
-
-In the app, go to **Settings → About → Contact us** for the Talkvoya contact QR code.
-
-If Harness helps with your work, star the repository, follow Talkvoya, or select **Watch → Custom → Releases** for version updates. [Star on GitHub](https://github.com/Talkvoya/Talkvoya.com) · [Follow Talkvoya](https://github.com/Talkvoya)
+[Download center](DOWNLOAD.en.md) · [Install and troubleshoot](HELP.en.md) · [Latest release notes](RELEASE_NOTES.en.md) · [Privacy, permissions, and licenses](TRUST.en.md) · [Contact Talkvoya](../SUPPORT.md)

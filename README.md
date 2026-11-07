@@ -1,25 +1,25 @@
-![Talkvoya](.github/assets/talkvoya-logo.svg)
+[![Talkvoya](.github/assets/talkvoya-logo.svg)](https://talkvoya.com/)
 
 # Talkvoya
 
-**Explore Talkvoya apps, download official releases, and find everything you need to get started.**
+**Official product and release hub**
 
-[Website](https://talkvoya.com/) · [Products](#products) · [Official channels](#official-channels) · [Simplified Chinese](README.zh-CN.md)
+[简体中文](README.zh-CN.md) · [Talkvoya.com](https://talkvoya.com/)
 
 ## Products
 
-| Product | Platform | What it does | Get started |
-| --- | --- | --- | --- |
-| **Talkvoya Harness** | Android · ARM64 | A mobile AI workspace for conversation, document tasks, and optional phone control. | [Product and setup guide](https://github.com/Talkvoya/Talkvoya.com/tree/main/TalkvoyaHarness) · [Latest release](https://github.com/Talkvoya/Talkvoya.com/releases/latest) |
+### Talkvoya Harness
 
-## Download with confidence
+An Android workspace for AI chat, document tasks, and optional phone control. Free to use forever. Bring your own model API key.
 
-Each release page lists the version, installation files, and SHA-256 checksums. Compare the checksum of the APK you downloaded with the published value before installing it.
+[**Explore Talkvoya Harness**](TalkvoyaHarness/README.md) · [Download center](TalkvoyaHarness/DOWNLOAD.en.md)
 
-[All releases](https://github.com/Talkvoya/Talkvoya.com/releases) · [English release notes](TalkvoyaHarness/RELEASE_NOTES.en.md) · [Harness disclaimer and use notice](TalkvoyaHarness/DISCLAIMER.en.md) · [Third-party licenses](TalkvoyaHarness/THIRD_PARTY_NOTICES.en.md)
+## Help and trust
+
+[Install and get help](TalkvoyaHarness/HELP.en.md) · [Privacy and permissions](TalkvoyaHarness/TRUST.en.md) · [Support](SUPPORT.md) · [Security](SECURITY.md)
 
 ## Official channels
 
 [Website](https://talkvoya.com/) · [YouTube](https://www.youtube.com/@Talkvoya) · [X](https://x.com/Talkvoya) · [Instagram](https://www.instagram.com/talkvoya) · [Facebook](https://www.facebook.com/Talkvoya) · [Threads](https://www.threads.com/@talkvoya) · [TikTok](https://www.tiktok.com/@talkvoya)
 
-**Stay in the loop.** Star this repository to save it, follow Talkvoya on GitHub for product news, or select **Watch → Custom → Releases** to receive release notifications. [Follow Talkvoya](https://github.com/Talkvoya)
+Star this repository to bookmark it. Use **Watch → Custom → Releases** to follow new versions.

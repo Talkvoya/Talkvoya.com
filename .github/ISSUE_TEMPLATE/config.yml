@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup and support / 安装与支持
+    url: https://github.com/Talkvoya/Talkvoya.com/blob/main/SUPPORT.md
+    about: Find the install guide, FAQ, and official contact.
+  - name: Report a security issue privately / 私密漏洞报告
+    url: https://github.com/Talkvoya/Talkvoya.com/security/policy
+    about: Use the private channel for security and privacy vulnerabilities.

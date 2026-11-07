@@ -1,0 +1,8 @@
+{
+  "version": "1.5.7",
+  "asset": "talkvoya-harness-1.5.7-arm64.apk",
+  "apk": "https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk",
+  "rel": "https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.7",
+  "hash": "754d8f6aeda5d9f31d6e77a26d5848ae3cf1a98617ddb73ff6d5bd0b15ae9699",
+  "cert": "838e430be3ea0eaf057bf937ae074269f5a98287948186eeaa8fafa34e303cb9"
+}
