@@ -1,0 +1,79 @@
+/* Harness product page */
+:root {
+  color-scheme: dark;
+  --ink: #f3f6ff;
+  --muted: #acb8cc;
+  --blue: #8bc7ff;
+  --line: #26344d;
+  --surface: #111724;
+  --bg: #080b13;
+}
+body { background: radial-gradient(ellipse at 50% 100%, #13254b 0, #080b13 68%); }
+header { background: #0a0f1b; }
+.brand img { filter: brightness(0) invert(1); }
+nav a { color: #c1cbdb; }
+nav a:hover, nav a[aria-current] { color: #8bc7ff; }
+.language { background: #121a29; }
+.skip { background: #111724; }
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .95fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-color: #2d3f62;
+  background:
+    radial-gradient(ellipse at 96% 106%, #28245b 0%, transparent 54%),
+    radial-gradient(ellipse at 54% 0%, #15315a 0%, transparent 53%),
+    #101727;
+  box-shadow: 0 22px 58px #02040b70;
+}
+.hero h1 { letter-spacing: -.052em; }
+.eyebrow { color: #94ceff; }
+.hero-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #354b75;
+  box-shadow: 0 16px 40px #0306138c;
+}
+.button { background: linear-gradient(115deg, #1262ca, #5440d3); }
+.button:hover { background: linear-gradient(115deg, #1a6dd5, #5d48dc); }
+.badge { color: #b7d5ff; background: #172541; border-color: #344d77; }
+.content { background: #101622; }
+.content h2 { letter-spacing: -.02em; }
+.content .capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  padding: 0;
+  list-style: none;
+}
+.capabilities li {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  color: #b7c3d7;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: #151d2d;
+}
+.capabilities strong { color: var(--ink); }
+.harness-gallery figure {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #141c2b;
+}
+.content .harness-gallery img { border: 0; border-radius: 0; }
+.harness-gallery figcaption { padding: .7rem .8rem; }
+footer { background: #0a0f1b; }
+@media (max-width: 760px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero-art { max-width: 540px; }
+}
+@media (max-width: 520px) {
+  .content .capabilities { grid-template-columns: minmax(0, 1fr); }
+  .harness-gallery figcaption { padding: .45rem; font-size: .72rem; }
+}
