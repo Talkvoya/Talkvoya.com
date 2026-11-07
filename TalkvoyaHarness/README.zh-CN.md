@@ -17,9 +17,7 @@
 
 ## 应用界面
 
-<img src="../docs/assets/harness-light.webp" width="215" alt="Talkvoya Harness 浅色新对话，Android 模拟器截图"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness 深色新对话，Android 模拟器截图">
-
-截图为简体中文界面，可在设置中切换为英文。
+<img src="../docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
 
 ## 开始使用
 

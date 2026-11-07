@@ -14,6 +14,10 @@ An Android workspace for AI chat, document tasks, and optional phone control. Fr
 
 [**Explore Talkvoya Harness**](TalkvoyaHarness/README.md) · [Download center](TalkvoyaHarness/DOWNLOAD.en.md)
 
+## App preview
+
+<img src="docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
+
 ## Help and trust
 
 [Install and get help](TalkvoyaHarness/HELP.en.md) · [Privacy and permissions](TalkvoyaHarness/TRUST.en.md) · [Support](SUPPORT.md) · [Security](SECURITY.md)

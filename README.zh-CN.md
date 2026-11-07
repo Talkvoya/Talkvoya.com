@@ -14,6 +14,10 @@
 
 [**了解 Talkvoya Harness**](TalkvoyaHarness/README.zh-CN.md) · [下载中心](TalkvoyaHarness/DOWNLOAD.md)
 
+## 应用界面
+
+<img src="docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
+
 ## 帮助与信任
 
 [安装与使用帮助](TalkvoyaHarness/HELP.md) · [隐私与权限](TalkvoyaHarness/TRUST.md) · [联系我们](SUPPORT.zh-CN.md) · [安全政策](SECURITY.zh-CN.md)

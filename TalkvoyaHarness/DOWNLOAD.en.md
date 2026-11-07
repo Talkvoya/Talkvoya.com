@@ -14,6 +14,10 @@
 | Runtime setup | Allow about 1.4 GB of free space |
 | Price | Free to use forever. Your chosen model provider may charge for usage. |
 
+## App preview
+
+<img src="../docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
+
 ## Verify the download
 
 1. Download the APK and the [SHA-256 file](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk.sha256).

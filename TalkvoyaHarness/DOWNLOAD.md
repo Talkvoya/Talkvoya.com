@@ -14,6 +14,10 @@
 | 运行环境 | 首次安装请预留约 1.4 GB 空间 |
 | 费用 | 应用永久免费使用，所选模型服务商可能按用量收费 |
 
+## 应用界面
+
+<img src="../docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
+
 ## 校验下载文件
 
 1. 下载 APK 和 [SHA-256 校验文件](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.7/talkvoya-harness-1.5.7-arm64.apk.sha256)。

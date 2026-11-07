@@ -15,11 +15,9 @@ Free to use forever for Android ARM64. Bring your own model API key. Your model 
 - **Follow the task.** See tool activity and use the optional overlay to follow progress, add instructions, or stop the task.
 - **Enable phone control when you need it.** Manage Accessibility permissions and your sensitive-app list on your device.
 
-## A look at the app
+## App preview
 
-<img src="../docs/assets/harness-light.webp" width="215" alt="Talkvoya Harness new chat in light mode, Android emulator"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in dark mode, Android emulator">
-
-The screenshots show the app’s Simplified Chinese interface. English is also available from Settings.
+<img src="../docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
 
 ## Get started
 
