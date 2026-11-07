@@ -17,7 +17,7 @@ Free to use forever for Android ARM64. Bring your own model API key. Your model 
 
 ## App preview
 
-<img src="../docs/assets/harness-poster.webp" width="275" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" alt="Talkvoya Harness settings in English dark mode">
+<img src="../docs/assets/harness-poster.webp" width="215" height="478" alt="Talkvoya Harness download poster"> <img src="../docs/assets/harness-dark.webp" width="215" height="478" alt="Talkvoya Harness new chat in English dark mode"> <img src="../docs/assets/harness-settings.webp" width="215" height="478" alt="Talkvoya Harness settings in English dark mode">
 
 ## Get started
 
