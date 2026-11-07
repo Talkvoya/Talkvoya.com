@@ -1,4 +1,4 @@
-![Talkvoya 品牌横幅](.github/assets/talkvoya-banner.svg)
+![Talkvoya](.github/assets/talkvoya-logo.svg)
 
 [English](README.md) · **简体中文**
 

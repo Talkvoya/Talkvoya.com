@@ -1,4 +1,4 @@
-![Talkvoya Harness — AI workspace for Android](../.github/assets/harness-banner.svg)
+![Talkvoya](../.github/assets/talkvoya-logo.svg)
 
 # Talkvoya Harness
 

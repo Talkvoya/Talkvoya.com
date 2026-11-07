@@ -1,4 +1,4 @@
-![Talkvoya — Product and release hub](.github/assets/talkvoya-banner.svg)
+![Talkvoya](.github/assets/talkvoya-logo.svg)
 
 # Talkvoya
 

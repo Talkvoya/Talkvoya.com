@@ -1,4 +1,4 @@
-![Talkvoya Harness 产品横幅](../.github/assets/harness-banner.svg)
+![Talkvoya](../.github/assets/talkvoya-logo.svg)
 
 [English](README.md) · **简体中文** · [品牌首页](../README.zh-CN.md)
 
