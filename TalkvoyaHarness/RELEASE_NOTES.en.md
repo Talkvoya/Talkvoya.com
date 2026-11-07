@@ -1,6 +1,14 @@
 # Talkvoya Harness release notes
 
-**English** · [Version 1.5.4 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.4) · [Version 1.5.3 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.3) · [Version 1.5.2 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2)
+**English** · [Version 1.5.5 release](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.5) · [Version 1.5.4 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.4) · [Version 1.5.3 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.3) · [Version 1.5.2 in Simplified Chinese](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.2)
+
+## Version 1.5.5
+
+The new chat screen shows four suggestions in small gray text below the existing logo and greeting. The suggestions follow the app language.
+
+Install the signed ARM64 APK on Android 8.0 or later. This build uses the same signing certificate as 1.5.4 for in-place upgrades. [APK](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.5/talkvoya-harness-1.5.5-arm64.apk) · [SHA-256 file](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.5/talkvoya-harness-1.5.5-arm64.apk.sha256).
+
+APK SHA-256: `6a90a768d09b6c30e6894968d5f77be2cb2a04c6b12edbe89b4e9e898bdc3b72`
 
 ## Version 1.5.4
 

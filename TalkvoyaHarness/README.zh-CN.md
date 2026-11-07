@@ -8,7 +8,7 @@
 
 在手机上运行 DeepSeek Harness 环境，选择自己的模型供应商。让 AI 帮你梳理资料、起草文档，或在你授权后操作手机。任务运行时，可以从进度悬浮窗查看状态、追加指令或停止任务。
 
-**[查看最新版本](https://github.com/Talkvoya/Talkvoya.com/releases/latest)** · **[下载 1.5.4 ARM64 APK](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.4/talkvoya-harness-1.5.4-arm64.apk)** · [校验文件与更新记录](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.4)
+**[查看最新版本](https://github.com/Talkvoya/Talkvoya.com/releases/latest)** · **[下载 1.5.5 ARM64 APK](https://github.com/Talkvoya/Talkvoya.com/releases/download/v1.5.5/talkvoya-harness-1.5.5-arm64.apk)** · [校验文件与更新记录](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.5)
 
 Android 8.0 或更新版本 · ARM64（arm64-v8a） · 安装运行环境请预留约 1.4 GB
 
@@ -26,7 +26,7 @@ Android 8.0 或更新版本 · ARM64（arm64-v8a） · 安装运行环境请预�
 1. 从版本页下载 ARM64 APK。需要核对文件时，使用随附的 SHA-256 校验值。Windows 可运行 `Get-FileHash -Algorithm SHA256 <APK 文件>`。
 2. 在 Android 上打开 APK，按系统提示允许当前安装来源。首次打开时阅读使用告知并安装本地运行环境。
 3. 进入设置，添加你自己的模型 API 密钥，选择模型后开始对话。手机操控可按需启用。
-4. 已安装 1.5.3 的用户可使用同一签名的 1.5.4 覆盖升级。卸载会清除本地对话、设置、密钥和运行环境，重要内容请先备份。
+4. 已安装 1.5.4 的用户可使用同一签名的 1.5.5 覆盖升级。卸载会清除本地对话、设置、密钥和运行环境，重要内容请先备份。
 
 ## 数据与权限
 
@@ -34,10 +34,10 @@ Talkvoya Harness 由 Talkvoya 独立开发，与 DeepSeek 官方无关联。运�
 
 发布页提供签名安装包和 SHA-256 校验文件。第三方组件保留各自许可证，自有应用源码保留在私有环境。运行环境的第三方源码与构建记录随 1.5.2 发布，本版沿用同一套内置运行环境。[第三方许可](THIRD_PARTY_NOTICES.md) · [源码获取说明](SOURCE_INFO.md)
 
-## 1.5.4 更新
+## 1.5.5 更新
 
-- 新对话页的 Logo 和问候语整体略微上移，保持水平居中。
-- [查看版本说明与下载附件](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.4)
+- 新对话页在 Logo 和问候语下方增加四条灰色小字建议。
+- [查看版本说明与下载附件](https://github.com/Talkvoya/Talkvoya.com/releases/tag/v1.5.5)
 
 ## 关注与联系
 
